@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Поясняющий текст</title>
+</head>
+
+<body>
+    <div style="border-bottom:dashed 1px #000;">
+        <span onClick="clickText()" style="cursor:pointer; font-size:110%;">Кликните по мне</span>
+    </div>
+    <div id="info_text" style="display:none; background:#a1ecff;">Это поясняющий текст к выше расположенному.</div>
+
+    <script type="text/javascript">
+        function clickText() {
+            obj_div = document.getElementById("info_text");
+            if (obj_div.style.display == "block")
+                obj_div.style.display = "none";
+            else
+                obj_div.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

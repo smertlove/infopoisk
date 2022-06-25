@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+</head>
+
+<body>
+    <div onMouseOver="newText(this)" onMouseOut="backText(this)">
+        Наведите на текст курсор мыши
+    </div>
+
+    <script type="text/javascript">
+        function newText(obj_div) {
+            obj_div.innerHTML = "Вы что наделали? :) Уберите немедленно курсор мыши с этого текста! :)";
+            obj_div.style.background = "#FFA8A8";
+        }
+
+        function backText(obj_div) {
+            obj_div.innerHTML = " Наведите на текст курсор мыши ";
+            obj_div.style.background = "#fff";
+        }
+
+    </script>
+</body>
+
+</html>

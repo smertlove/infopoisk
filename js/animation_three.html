@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css animation</title>
+    <style>
+        a {
+            cursor: pointer;
+        }
+
+        a:hover~span {
+            visibility: visible;
+            transition-delay: unset;
+            -webkit-transition-delay: unset;
+            -moz-transition-delay: unset;
+        }
+
+        span {
+            width: 100%;
+            height: auto;
+            visibility: hidden;
+            transition-delay: 1s;
+            -webkit-transition-delay: 1s;
+            -moz-transition-delay: 1s;
+            transition-property: visibility;
+            -webkit-transition-property: visibility;
+            -moz-transition-property: visibility;
+        }
+
+        span:hover {
+            visibility: visible;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a>know more -></a>
+    <span>
+        <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis totam incidunt id delectus sapiente quo culpa aliquid minus recusandae magni!</p>
+    </span>
+</body>
+
+</html>
